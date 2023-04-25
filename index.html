@@ -6,38 +6,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--=============== FAVICON ===============-->
-    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <!--!=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png" />
+    <!-- <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon"> -->
 
-    <!--=============== REMIXICONS ===============-->
+    <!--!=============== REMIXICONS ===============-->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
 
-    <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <!--!=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
 
 
     <title>Personal Portfolio Mobile First</title>
 </head>
 
 <body>
+    <!--!==================== HEADER ====================-->
     <header class="header" id="header">
-        <nav class="nav container"></nav>
-        <a href="#" class="nav__logo">######</a>
+        <nav class="nav container">
+            <a href="#" class="nav__logo">started <span>_Here</span></a>
 
-        <div class="nav__menu" id="nav-menu">
-            <ul class="nav__list">
-                <li class="nav__item">
-                </li>
-            </ul>
-        </div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">Home</a>
+                    </li>
 
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">Services</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">Projects</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+
+                <!--_ Nav Close Button -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+
+            <!-- _ Nav Menu Toggle Button -->
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+            </div>
+        </nav>
     </header>
-
-    <main class="main">
-        <h1>Building in Progress...</h1>
-
-    </main>
-
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
 </body>

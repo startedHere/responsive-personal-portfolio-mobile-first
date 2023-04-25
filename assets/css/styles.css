@@ -220,9 +220,55 @@ button {
 	margin-right: var(--mb-1);
 } */
 
-/*=============== HEADER ===============*/
+/*!=============== HEADER && NAV ===============*/
+.header {
+	position: fixed;
+	width: 100%;
+	background-color: var(--container-color);
+	top: 0;
+	left: 0;
+	z-index: var(--z-fixed);
+}
 
-/*=============== NAV ===============*/
+.nav {
+	height: var(--header-height);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.nav__logo {
+	color: var(--title-color);
+	font-weight: var(--font-medium);
+}
+
+.nav__logo span {
+	color: var(--first-color);
+}
+
+.nav__toggle,
+.nav__close {
+	display: flex;
+	font-size: 1.25rem;
+	color: var(--title-color);
+	cursor: pointer;
+}
+
+/*_ Navigation For Mobile Devices */
+@media screen and (max-width: 1023px) {
+	.nav__menu {
+		position: fixed;
+		top: 0;
+		right: 0;
+		background-color: hsla(0, 0%, 10%, 0.3);
+		width: 75%;
+		height: 100%;
+		padding: 4.5rem 0 0 3rem;
+		backdrop-filter: blur(24px);
+		-webkit-backdrop-filter: blur(24px); /* For Chromium Based Browsers */
+		transition: right 0.4s;
+	}
+}
 
 /* show menu */
 
