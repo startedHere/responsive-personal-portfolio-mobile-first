@@ -49,15 +49,38 @@
                     </li>
                 </ul>
 
-                <!--_ Nav Close Button -->
-                <div class="nav__close" id="nav-close">
-                    <i class="ri-close-line"></i>
+                <!--_ Dark Mode Button -->
+                <div class="nav__dark-mode">
+                    <span class="change-theme-name">Dark</span>
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
                 </div>
+
+                <!--_ Nav Close Button -->
+                <!-- <i class="ri-close-line nav__close" id="nav-close"></i> -->
             </div>
 
             <!-- _ Nav Menu Toggle Button -->
-            <div class="nav__toggle" id="nav-toggle">
+            <!-- <div class="nav__toggle" id="nav-toggle">
                 <i class="ri-menu-line"></i>
+            </div> -->
+
+            <!--_ For Animated Toggle Button...Trials***  -->
+            <!-- <label for="hamburger" class="mobile-menu-toggle" role="button">
+                <input type="checkbox" name="menu" id="hamburger" class="visually-hidden">
+                <div class="menu">
+                    <span class="bar top"></span>
+                    <span class="bar middle"></span>
+                    <span class="bar bottom"></span>
+                </div>
+            </label> -->
+
+            <div class="mobile-menu-toggle" role="button" id="mobile-menu-toggle">
+                <input type="checkbox" name="menu" id="hamburger" class="visually-hidden">
+                <div class="menu">
+                    <span class="bar top"></span>
+                    <span class="bar middle"></span>
+                    <span class="bar bottom"></span>
+                </div>
             </div>
         </nav>
     </header>
