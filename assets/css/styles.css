@@ -344,18 +344,6 @@ button {
 	cursor: pointer;
 }
 
-/* .visually-hidden {
-	position: absolute;
-	width: 0.5px;
-	height: 0.5px;
-	border: 0;
-	padding: 0;
-	margin: -1px;
-	clip-path: rect(0, 0, 0, 0);
-	white-space: nowrap;
-	overflow: hidden;
-} */
-
 /*! For Animated Toggle Button */
 /* _ Initial Setup */
 .mobile-menu-toggle {
@@ -384,6 +372,18 @@ button {
 	overflow: hidden;
 	white-space: nowrap;
 }
+
+/* .visually-hidden {
+	position: absolute;
+	width: 0.5px;
+	height: 0.5px;
+	border: 0;
+	padding: 0;
+	margin: -1px;
+	clip-path: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	overflow: hidden;
+} */
 
 .menu {
 	width: 100%;
@@ -423,6 +423,7 @@ input[type='checkbox']:checked ~ .menu .bottom {
 }
 
 /* .menu .bar .top  */
+/* _ (very specific selector) */
 #animated-toggle-button .menu .top {
 	position: absolute;
 	width: 0.75rem;
@@ -433,6 +434,7 @@ input[type='checkbox']:checked ~ .menu .bottom {
 }
 
 /* .menu .bar .bottom  */
+/* _ (very specific selector) */
 #animated-toggle-button .menu .bottom {
 	position: absolute;
 	width: 0.75rem;
@@ -440,6 +442,15 @@ input[type='checkbox']:checked ~ .menu .bottom {
 	right: 0;
 	z-index: 10;
 	animation: width 1.5s ease infinite alternate;
+}
+
+@keyframes width {
+	from {
+		width: 0.375rem;
+	}
+	to {
+		width: 0.75rem;
+	}
 }
 
 /*! Show Menu implementation from 'main.js'...*/
