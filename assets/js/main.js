@@ -19,7 +19,7 @@
 // 	});
 // }
 const navMenu = document.getElementById('nav-menu');
-const menuToggle = document.getElementById('mobile-menu-toggle');
+const menuToggle = document.getElementById('animated-toggle-button');
 const menuCheckbox = document.getElementById('hamburger');
 
 if (menuToggle) {

@@ -324,83 +324,6 @@ button {
 	right: 1.5rem;
 } */
 
-.visually-hidden {
-	position: absolute;
-	width: 0.5px;
-	height: 0.5px;
-	border: 0;
-	padding: 0;
-	margin: 5px;
-	clip-path: rect(0, 0, 0, 0);
-	white-space: nowrap;
-	overflow: hidden;
-}
-
-.mobile-menu-toggle {
-	/* width: 1.5rem; */
-	/* height: 1.5rem; */
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	cursor: pointer;
-	position: relative;
-	/* overflow: hidden; */
-	/* transition: all 0.5s ease-in-out; */
-	/* z-index: 9999; */
-}
-
-input[type='checkbox']:checked ~ .menu .top {
-	transition: all 0.5s ease-in-out;
-	transform: rotate(45deg) translate(5px, 0);
-	animation: unset;
-}
-input[type='checkbox']:checked ~ .menu .middle {
-	transition: all 0.5s ease-in-out;
-	transform: rotate(-360deg) rotate(-45deg);
-}
-input[type='checkbox']:checked ~ .menu .bottom {
-	transition: all 0.5s ease-in-out;
-	transform: rotate(45deg) translate(1px, -3px);
-	animation: unset;
-}
-.menu {
-	padding: 0;
-	width: 100%;
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-flow: column wrap;
-	transition: all 0.5s ease-in-out;
-	transform-origin: center center;
-}
-.menu .bar {
-	display: flex;
-	width: 1.25rem;
-	height: 0.15rem;
-	border-radius: 1rem;
-	background-color: #fff;
-	position: relative;
-	transition: all 0.5s ease-in-out;
-	margin-bottom: 2px;
-}
-.menu .bar .top {
-	position: absolute;
-	width: 50%;
-	top: 10px;
-	left: 0;
-	z-index: 10;
-	animation: width 1.5s ease infinite alternate;
-}
-.menu .bar .bottom {
-	position: absolute;
-	width: 50%;
-	bottom: 10px;
-	right: 0;
-	z-index: 10;
-	animation: width 1.5s ease infinite alternate;
-}
-
 /*_ Button Dark/Light */
 .nav__dark-mode {
 	display: flex;
@@ -421,7 +344,105 @@ input[type='checkbox']:checked ~ .menu .bottom {
 	cursor: pointer;
 }
 
-/*_ Show Menu implementation from 'main.js'...*/
+/* .visually-hidden {
+	position: absolute;
+	width: 0.5px;
+	height: 0.5px;
+	border: 0;
+	padding: 0;
+	margin: -1px;
+	clip-path: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	overflow: hidden;
+} */
+
+/*! For Animated Toggle Button */
+/* _ Initial Setup */
+.mobile-menu-toggle {
+	width: 1.5rem;
+	height: 1.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	position: relative;
+	/* overflow: hidden; */
+	transition: all 0.5s ease-in-out;
+	z-index: 9999;
+}
+
+/* _ Making the 'checkbox' responsible for the bars rotation almost invisible to see since it is placed behind the bars...*/
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+	clip-path: rect(0, 0, 0, 0);
+	clip: rect(0, 0, 0, 0);
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.menu {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column wrap;
+	transition: all 0.5s ease-in-out;
+	transform-origin: center center;
+}
+.menu .bar {
+	display: flex;
+	width: 1.5rem;
+	height: 0.15rem;
+	border-radius: 1rem;
+	background-color: #fff;
+	position: relative;
+	transition: all 0.5s ease-in-out;
+	margin-bottom: 2px;
+}
+
+/* _ Bars Rotation Direction when 'checkbox' is ticked... */
+input[type='checkbox']:checked ~ .menu .top {
+	transition: all 0.5s ease-in-out;
+	transform: rotate(45deg) translate(2.5px, -2.5px);
+	animation: unset;
+}
+input[type='checkbox']:checked ~ .menu .middle {
+	transition: all 0.5s ease-in-out;
+	transform: rotate(-360deg) rotate(-45deg);
+}
+input[type='checkbox']:checked ~ .menu .bottom {
+	transition: all 0.5s ease-in-out;
+	transform: rotate(45deg) translate(-2.5px, 2px);
+	animation: unset;
+}
+
+/* .menu .bar .top  */
+#animated-toggle-button .menu .top {
+	position: absolute;
+	width: 0.75rem;
+	top: 7px;
+	left: 0;
+	z-index: 10;
+	animation: width 1.5s ease infinite alternate;
+}
+
+/* .menu .bar .bottom  */
+#animated-toggle-button .menu .bottom {
+	position: absolute;
+	width: 0.75rem;
+	bottom: 7px;
+	right: 0;
+	z-index: 10;
+	animation: width 1.5s ease infinite alternate;
+}
+
+/*! Show Menu implementation from 'main.js'...*/
 .show-menu {
 	right: 0;
 }
