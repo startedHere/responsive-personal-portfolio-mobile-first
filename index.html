@@ -13,6 +13,10 @@
     <!--!=============== REMIXICONS ===============-->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet" />
 
+    <!--!=============== LODASH LIBRARY ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+
+
     <!--!=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/styles.css" />
 
@@ -21,7 +25,7 @@
 </head>
 
 <body>
-    <!--!==================== HEADER ====================-->
+    <!--_==================== HEADER ====================-->
     <header class="header" id="header">
         <nav class="nav container">
             <a href="#" class="nav__logo">started <span>_Here</span></a>
@@ -29,7 +33,7 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="#home" class="nav__link">Home</a>
+                        <a href="#home" class="nav__link active-link">Home</a>
                     </li>
 
                     <li class="nav__item">
@@ -50,6 +54,10 @@
 
                     <li class="nav__item">
                         <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#contactBeta" class="nav__link">ContactBeta</a>
                     </li>
                 </ul>
 
@@ -89,9 +97,9 @@
         </nav>
     </header>
 
-    <!--==================== MAIN ====================-->
+    <!--_==================== MAIN ====================-->
     <main class="main">
-        <!--==================== HOME ====================-->
+        <!--!==================== HOME ====================-->
         <section class="home section" id="home">
             <div class="home__container container grid">
                 <div class="home__content">
@@ -164,7 +172,7 @@
             </div>
         </section>
 
-        <!--==================== ABOUT ====================-->
+        <!--!==================== ABOUT ====================-->
         <section class="about section" id="about">
             <div class="about__container container grid">
 
@@ -186,6 +194,7 @@
                 </div>
 
                 <div class="about__image">
+
                     <svg class="about__blob" viewBox="0 0 550 592" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <mask id="maskBorder" mask-type="alpha">
                             <path d="M263 48.1782C270.426 43.891 279.574 43.891 287 48.1782L501.157 
@@ -194,6 +203,7 @@
                            270.426 588.609 263 584.322L48.843 460.678C41.4174 456.391 36.843 448.468 36.843 
                            439.894V192.606C36.843 184.032 41.4174 176.109 48.843 171.822L263 48.1782Z" fill="black" />
                         </mask>
+
                         <g mask="url(#maskBorder)">
                             <rect x="37" width="476" height="630" fill="url(#pattern2)" />
 
@@ -221,12 +231,13 @@
                                 href="assets/img/perfil.png" />
                         </defs>
                     </svg>
+
                 </div>
 
             </div>
         </section>
 
-        <!--==================== SKILLS/MY MIND ====================-->
+        <!--!==================== SKILLS/MY MIND ====================-->
         <!-- <section class="c-mdn-header mzp-t-dark" id="mymind"> -->
 
         <!-- <div class="mzp-l-content mzp-t-content-md c-mdn-header-content">
@@ -245,12 +256,11 @@
         <!-- <div class="mandala-wrapper container grid"> -->
         <!-- <div id="mandala" class="mandala-container animate-colors" aria-hidden="true"> -->
 
-        <section class="mymind" id="mymind">
+        <section class="mymind section" id="mymind">
 
             <div class="mandala-container animate-colors container grid" id="mandala" aria-hidden="true">
 
                 <div class="mandala-translate mandala-rotate">
-
                     <svg width="675" height="675" viewBox="0 0 675 675" fill="none" xmlns="http://www.w3.org/2000/svg"
                         class="mandala">
                         <defs>
@@ -325,7 +335,6 @@
                             </textPath>
                         </text>
                     </svg>
-
                 </div>
 
                 <div class="mymind__data">
@@ -345,41 +354,348 @@
 
             </div>
 
-            <!-- <div class="mymind__data">
-                <h3 class="section__subtitle">
-                    My <span>Intro</span>
-                </h3>
-
-                <h2 class="section__title">
-                    About Me
-                </h2>
-
-                <p class="mymind__description">
-                    Front-End Developer, I craft Web Pages with Elegant UI/UX Interface, I've Developed my skill
-                    over the period meticulously building several web projects.
-                </p>
-            </div> -->
-
         </section>
 
-        <!--==================== SERVICES ====================-->
+        <!--!==================== SKILLS ====================-->
+        <section class="skills section">
+            <div class="skills__container container grid">
+                <div class="skills__data">
+                    <h3 class="section__subtitle">
+                        Favourite <span>Skills</span>
+                    </h3>
+
+                    <h2 class="section__title">
+                        My Skills
+                    </h2>
+
+                    <p class="skills__description">
+                        See Fully What Skills I have and Perform,
+                        to develop the Projects For You...
+                    </p>
+
+                    <a href="#projects" class="button">See Projects</a>
+                </div>
+
+                <div class="skills__content">
+                    <ol class="skills__group">
+                        <li class="skills__item">HTML & CSS</li>
+                        <li class="skills__item">JavaScript</li>
+                        <li class="skills__item">React</li>
+                        <!-- <li class="skills__item">Bootstrap</li> -->
+                    </ol>
+
+                    <ol class="skills__group" start="4">
+                        <li class="skills__item">Git & Github</li>
+                        <li class="skills__item">Figma</li>
+                        <li class="skills__item">Sketch</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!--!==================== SERVICES ====================-->
         <section class="services section" id="services">
+            <h3 class="section__subtitle">
+                My <span>Services
+            </h3>
 
+            <h2 class="section__title">
+                What I Do
+            </h2>
+
+            <div class="services__container container grid">
+                <article class="services__card">
+                    <i class="ri-layout-3-line services__icon"></i>
+
+                    <h2 class="services__title">Web Developer</h2>
+
+                    <p class="services__description">
+                        Development Of Custom Web Pages.
+                        Using Current Technologies and
+                        Libraries Of the Labour field.
+                    </p>
+                </article>
+
+                <article class="services__card">
+                    <i class="ri-pantone-line services__icon"></i>
+
+                    <h2 class="services__title">UI/UX Designer</h2>
+
+                    <p class="services__description">
+                        I Offer Design Of Web Interfaces and
+                        Mobile Applications, Design Made in
+                        Figma, Adobe XD and Sketch.
+                    </p>
+                </article>
+
+                <article class="services__card">
+                    <i class="ri-pen-nib-line services__icon"></i>
+
+                    <h2 class="services__title">Graphic Design</h2>
+
+                    <p class="services__description">
+                        I Make Designs At The Client's Request,
+                        Banner Design, Posters, Digital
+                        Design Among Others.
+                    </p>
+                </article>
+            </div>
         </section>
 
-        <!--==================== PROJECTS ====================-->
+        <!--!==================== PROJECTS ====================-->
         <section class="projects section" id="projects">
+            <h3 class="section__subtitle">
+                My <span>Jobs</span>
+            </h3>
 
+            <h2 class="section__title">
+                Recent Projects
+            </h2>
+
+            <div class="projects__container container grid">
+                <article class="projects__card">
+                    <img src="assets/img/project-img-1.jpg" alt="projects image" class="projects__img">
+
+                    <div class="projects__modal">
+                        <span class="projects__subtitle">Web</span>
+
+                        <h2 class="projects__title">Modern Website</h2>
+
+                        <a href="#" class="projects__button">
+                            View Demo <i class="ri-external-link-line"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="projects__card">
+                    <img src="assets/img/project-img-2.jpg" alt="projects image" class="projects__img">
+
+                    <div class="projects__modal">
+                        <span class="projects__subtitle">Web</span>
+
+                        <h2 class="projects__title">Modern Website</h2>
+
+                        <a href="#" class="projects__button">
+                            View Demo <i class="ri-external-link-line"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="projects__card">
+                    <img src="assets/img/project-img-3.jpg" alt="projects image" class="projects__img">
+
+                    <div class="projects__modal">
+                        <span class="projects__subtitle">Web</span>
+
+                        <h2 class="projects__title">Modern Website</h2>
+
+                        <a href="#" class="projects__button">
+                            View Demo <i class="ri-external-link-line"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="projects__card">
+                    <img src="assets/img/project-img-4.jpg" alt="projects image" class="projects__img">
+
+                    <div class="projects__modal">
+                        <span class="projects__subtitle">Web</span>
+
+                        <h2 class="projects__title">Modern Website</h2>
+
+                        <a href="#" class="projects__button">
+                            View Demo <i class="ri-external-link-line"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="projects__card">
+                    <img src="assets/img/project-img-5.jpg" alt="projects image" class="projects__img">
+
+                    <div class="projects__modal">
+                        <span class="projects__subtitle">Web</span>
+
+                        <h2 class="projects__title">Modern Website</h2>
+
+                        <a href="#" class="projects__button">
+                            View Demo <i class="ri-external-link-line"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="projects__card">
+                    <img src="assets/img/project-img-6.jpg" alt="projects image" class="projects__img">
+
+                    <div class="projects__modal">
+                        <span class="projects__subtitle">Web</span>
+
+                        <h2 class="projects__title">Modern Website</h2>
+
+                        <a href="#" class="projects__button">
+                            View Demo <i class="ri-external-link-line"></i>
+                        </a>
+                    </div>
+                </article>
+            </div>
         </section>
 
-        <!--==================== CONTACT ====================-->
+        <!--!==================== CONTACT ====================-->
         <section class="contact section" id="contact">
+            <h3 class="section__subtitle">
+                Get In <span>Touch</span>
+            </h3>
 
+            <h2 class="section__title">
+                Contact Me
+            </h2>
+
+            <div class="contact__container container grid">
+                <form action="" class="contact__form" id="contact-form">
+                    <div class="contact__group">
+                        <input type="text" name="user_name" required placeholder="Enter Your Name"
+                            class="contact__input">
+                        <input type="email" name="user_email" required placeholder="Enter Your Email"
+                            class="contact__input">
+                    </div>
+
+                    <textarea name="user_project" required placeholder="Enter Your Message"
+                        class="contact__input"></textarea>
+
+                    <p class="contact__message" id="contact-message">Message Here</p>
+
+                    <button type="submit" class="button contact__button">
+                        Send Message
+                    </button>
+                </form>
+            </div>
         </section>
+
+
+        <!--!=============== CONTACT BETA ===============-->
+        <section class="contactBeta section" id="contactBeta">
+
+            <h3 class="section__subtitle">
+                Get In <span>Touch</span>
+            </h3>
+
+            <h2 class="section__title">
+                Contact Me
+            </h2>
+
+            <form>
+                <!-- Left Side Of The Form -->
+                <!-- <div class="contact-left">
+                    <h1 class="title">Contact Us</h1>
+                    <p class="description">Let's Keep In Touch.</br>For More Information,</br>Sign Up.</p>
+                </div> -->
+
+
+                <!-- Right Side Of The Form -->
+                <div class="contact-right container grid">
+                    <div class="input-container">
+                        <p class="placeholder">Enter Your Name</p>
+                        <input type="text" name="name" autocomplete="off" class="input-name input">
+                        <svg class="line-svg" width="300" height="2" viewBox="0 0 300 2" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path class="elastic-line"
+                                d="M0 0.999512C0 0.999512 60.5 0.999512 150 0.999512C239.5 0.999512 300 0.999512 300 0.999512"
+                                stroke="#D1D4DA" stroke-width="2" />
+                        </svg>
+                    </div>
+
+                    <div class="input-container">
+                        <p class="placeholder">Enter Your Email</p>
+                        <input type="email" name="email" autocomplete="off" class="input-email input">
+                        <svg class="line-svg" width="300" height="2" viewBox="0 0 300 2" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path class="elastic-line"
+                                d="M0 0.999512C0 0.999512 60.5 0.999512 150 0.999512C239.5 0.999512 300 0.999512 300 0.999512"
+                                stroke="#D1D4DA" stroke-width="2" />
+                        </svg>
+                    </div>
+
+                    <div class="input-container">
+                        <p class="placeholder">Phone Number</p>
+                        <input type="tel" name="tel" autocomplete="off" class="input-number input">
+                        <svg class="line-svg" width="300" height="2" viewBox="0 0 300 2" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path class="elastic-line"
+                                d="M0 0.999512C0 0.999512 60.5 0.999512 150 0.999512C239.5 0.999512 300 0.999512 300 0.999512"
+                                stroke="#D1D4DA" stroke-width="2" />
+                        </svg>
+                    </div>
+
+                    <div class="promo-container">
+                        <div class="checkbox-container">
+                            <span class="checkmark"></span>
+                            <div class="checkbox-fill"></div>
+                            <input type="checkbox" type="checkbox" class="checkbox">
+                            <svg width="19" height="16" viewBox="0 0 19 16" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" class="tick-mark">
+                                <path class="elastic-line" d="M2 8.5L6.5 13L17.5 2" stroke="white" stroke-width="4" />
+                            </svg>
+                        </div>
+                        <label class="checkbox-label">Send Promotions and Offers</label>
+                    </div>
+
+                    <p class="contact__message" id="contact-message">Message Here</p>
+
+                    <!-- <button>Join Us</button> -->
+                    <button type="submit" class="button contactBeta__button">
+                        Join Us
+                    </button>
+                </div>
+        </section>
+
     </main>
 
+    <!--_==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <div>
+                <h1 class="footer__title">
+                    Chukwuma <span>Chu</span>
+                </h1>
 
-    <!--=============== MAIN JS ===============-->
+                <h2 class="footer__education">
+                    Front-End Developer
+                </h2>
+            </div>
+
+            <div class="footer__social">
+                <a href="https://www.facebook.com" target="_blank" class="footer__social-link">
+                    <i class="ri-facebook-circle-line"></i>
+                </a>
+
+                <a href="https://www.instagram.com" target="_blank" class="footer__social-link">
+                    <i class="ri-instagram-line"></i>
+                </a>
+
+                <a href="https://www.twitter.com" target="_blank" class="footer__social-link">
+                    <i class="ri-twitter-line"></i>
+                </a>
+            </div>
+
+            <span class="footer__copy">
+                &#169; Copyright Chukwuma. All Rights Reserved
+            </span>
+        </div>
+    </footer>
+
+    <!--!==================== SCROLL UP ====================-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!--_=============== FOR GSAP ===============-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"
+        integrity="sha512-GQ5/eIhs41UXpG6fGo4xQBpwSEj9RrBvMuKyE2h/2vw3a9x85T1Bt0JglOUVJJLeyIUl/S/kCdDXlE/n7zCjIg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!--_=============== EMAIL JS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <!--_=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
 </body>
 
