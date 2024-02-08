@@ -1087,9 +1087,9 @@ input[type='checkbox']:checked ~ .menu .bottom {
 	/* background: linear-gradient(90deg, #6190e8, #a7bfe8); */
 }
 
-#contactBeta .section__title {
+/* #contactBeta .section__title {
 	margin-bottom: 2.5rem;
-}
+} */
 
 #contactBeta form {
 	/* position: absolute; */
@@ -1106,7 +1106,7 @@ input[type='checkbox']:checked ~ .menu .bottom {
 
 	color: #777474;
 
-	padding: 0rem 1rem;
+	/* padding: 0rem 1rem; */
 	border-radius: 1rem;
 }
 
@@ -1128,6 +1128,8 @@ input[type='checkbox']:checked ~ .menu .bottom {
 
 	flex-direction: column;
 	row-gap: 3rem;
+
+	padding: 2rem 1rem 0;
 }
 
 .input-container {
