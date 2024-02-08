@@ -1254,6 +1254,16 @@ input[type='checkbox']:checked ~ .menu .bottom {
 	align-self: flex-start;
 } */
 
+.contactBeta__message {
+	/* position: absolute; */
+	/* left: 0; */
+	/* bottom: 4.5rem; */
+	/* font-size: var(--small-font-size); */
+
+	/* color: var(--title-color); */
+	color: var(--first-color);
+}
+
 .contactBeta__button {
 	/* align-self: flex-start; */
 	align-self: center;
