@@ -1028,6 +1028,9 @@ input[type='checkbox']:checked ~ .menu .bottom {
 
 .contact__input {
 	padding: 1rem 1.25rem;
+
+	width: 100%;
+
 	border-radius: 0.5rem;
 	background-color: var(--container-color);
 	color: var(--title-color);
@@ -1053,7 +1056,8 @@ input[type='checkbox']:checked ~ .menu .bottom {
 	left: 0;
 	bottom: 4.5rem;
 	font-size: var(--small-font-size);
-	color: var(--title-color);
+	/* color: var(--title-color); */
+	color: var(--first-color);
 }
 
 /*!=============== CONTACT BETA===============*/
@@ -1065,7 +1069,7 @@ input[type='checkbox']:checked ~ .menu .bottom {
 	/* display: grid; */
 
 	/* padding: 2rem; */
-	padding: 1rem;
+	/* padding: 1rem; */
 	/* padding: 3rem 5rem; */
 	/* padding: 1rem 1.25rem; */
 
@@ -1102,7 +1106,7 @@ input[type='checkbox']:checked ~ .menu .bottom {
 
 	color: #777474;
 
-	padding: 6rem 1.5rem;
+	padding: 0rem 1rem;
 	border-radius: 1rem;
 }
 
@@ -1124,8 +1128,6 @@ input[type='checkbox']:checked ~ .menu .bottom {
 
 	flex-direction: column;
 	row-gap: 3rem;
-
-	column-gap: 6rem, 6rem;
 }
 
 .input-container {
@@ -1259,7 +1261,7 @@ input[type='checkbox']:checked ~ .menu .bottom {
 
 /*!=============== FOOTER ================*/
 .footer {
-	background-color: var(--container-color);
+	/* background-color: var(--container-color); */
 	padding-block: 3.5rem 2rem;
 }
 
