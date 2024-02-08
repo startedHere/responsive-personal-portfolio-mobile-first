@@ -1129,7 +1129,7 @@ input[type='checkbox']:checked ~ .menu .bottom {
 	flex-direction: column;
 	row-gap: 3rem;
 
-	padding: 2rem 1rem 0;
+	padding: 2rem 0.5rem 0;
 }
 
 .input-container {
