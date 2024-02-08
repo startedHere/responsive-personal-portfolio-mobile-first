@@ -1102,7 +1102,7 @@ input[type='checkbox']:checked ~ .menu .bottom {
 	/* width: 50vw; */
 
 	/* background: white; */
-	background: var(--body-color);
+	/* background: var(--body-color); */
 
 	color: #777474;
 
