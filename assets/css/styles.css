@@ -1123,7 +1123,7 @@ input[type='checkbox']:checked ~ .menu .bottom {
 	display: grid;
 
 	/* flex-direction: column; */
-	row-gap: 3rem;
+	/* row-gap: 3rem; */
 
 	padding: 2rem 0.5rem 0;
 	border-radius: 1rem;
@@ -1142,13 +1142,13 @@ input[type='checkbox']:checked ~ .menu .bottom {
 	row-gap: -5rem;
 } */
 
-.contactBeta__form textarea {
+/* .contactBeta__form textarea {
 	margin-bottom: -2rem;
-}
+} */
 
-.contactBeta__form .contactBeta__message {
-	margin-top: -2rem; /* Adjust the margin-bottom as needed */
-}
+/* .contactBeta__form .contactBeta__message {
+	margin-top: -2rem;
+} */
 
 /* .contactBeta__form .contactBeta__button {
 	margin-top: -2rem;
@@ -1164,10 +1164,15 @@ input[type='checkbox']:checked ~ .menu .bottom {
 
 .input-container {
 	position: relative;
+	/* position: absolute; */
+
+	margin-bottom: 3rem;
 }
 
 .input {
+	/* position: absolute; */
 	position: relative;
+
 	width: 100%;
 	/* height: 20vh; */
 
@@ -1240,10 +1245,12 @@ input[type='checkbox']:checked ~ .menu .bottom {
 	width: 100%;
 
 	border-radius: 0.5rem;
-	background-color: var(--container-color);
+	/* background-color: var(--container-color); */
 
 	color: var(--title-color); /* Input Text Color */
 	/* color: black; */
+
+	margin-bottom: 1rem;
 }
 
 /* .contactBeta__form > .contactBeta__textarea {
@@ -1260,18 +1267,22 @@ input[type='checkbox']:checked ~ .menu .bottom {
 } */
 /* color: red; */
 
-.checkbox-label {
+/* .checkbox-label {
 	font-size: 0.7rem;
-}
+} */
+
 .promo-container {
 	position: relative;
 	display: flex;
+
+	margin-bottom: 1rem;
 }
 .checkbox {
 	opacity: 0;
 	cursor: pointer;
 }
 .checkbox-label {
+	font-size: 0.7rem;
 	padding-left: 0.5rem;
 }
 .checkbox-container {
@@ -1317,9 +1328,9 @@ input[type='checkbox']:checked ~ .menu .bottom {
 	color: var(--first-color);
 }
 
-.contactBeta__form > .contactBeta__button {
+/* .contactBeta__form > .contactBeta__button {
 	margin-bottom: 0.5rem;
-}
+} */
 
 /* #contactBeta button {
 	font-family: 'Poppins', sans-serif;
@@ -1340,8 +1351,10 @@ input[type='checkbox']:checked ~ .menu .bottom {
 } */
 
 .contactBeta__button {
-	/* align-self: flex-start; */
-	align-self: center;
+	align-self: flex-start;
+	/* align-self: center; */
+	/* justify-self: center; */
+
 	padding: 0.5rem 2.5rem;
 	cursor: pointer;
 }
