@@ -641,6 +641,15 @@ function resetSpecificGSAPElements() {
 		gsap.to(placeholder, { top: 25, left: 0, scale: 1, duration: 0.5, ease: 'Power2.easeOut' });
 		// colorize('#FE8C99', line, placeholder);
 		colorize(textColor, line, placeholder);
+
+		tl2.to('.checkbox-fill', { top: '100%' });
+		// tl2.fromTo(tickMarkPath, { strokeDashoffset: 0 }, { strokeDashoffset: pathLength }, '<10%');
+		tl2.fromTo(tickMarkPath, { strokeDashoffset: 0 }, { strokeDashoffset: pathLength }, { duration: 0 }, '<50%');
+		// tl2.to('.checkbox-label', { color: '#c5c5c5' }, '<');
+		// tl2.to('.checkbox-label', { color: '#777474' }, '<');
+		tl2.to('.checkbox-label', { color: textColor }, { duration: 0 }, '<');
+
+		// tl2.to('.checkbox-label', { color: textColor }, { duration: 0 }, '<');
 	});
 }
 
